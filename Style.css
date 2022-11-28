@@ -1,0 +1,273 @@
+/*CSS de ma page*/
+@font-face {
+    font-family: 'georgia';
+    src: url(./Polices/georgia/georgia.ttf);
+    src: url(./Polices/georgia/georgiab.ttf);
+    src: url(./Polices/georgia/georgiai.ttf);
+    src: url(./Polices/georgia/georgiaz.ttf);
+    font-family: 'Ramisland';
+    src: url(./Polices/Ramisland/Ramisland.otf);
+}
+
+/* GENERAl */
+
+body /*CSS qui s'applique à la page entière*/
+{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(104, 104, 104);
+    background-image: url(./Images/Fond_1.jpg);
+}
+
+a /*CSS qui s'applique aux liens*/
+{
+    text-decoration: none;
+}
+
+a:visited /* S'active lorsque le lien est visité */
+{
+    color: beige;
+}
+
+a:hover /* S'active lorsque le curseur survole le lien */
+{
+    color:black;
+    text-shadow: rgb(245,245,220) 1px 0 10px;
+}
+
+/* CLASSES ET ID */
+
+.adresses
+{
+    color: beige;
+}
+
+#Tel
+{
+    color: beige;
+}
+
+#titre
+{
+    display: block;
+    align-items: center;
+}
+
+#Photo, #Photo_1
+{
+    float: left;
+    width: 100px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+#Photo
+{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    margin-left: 0px;
+}
+
+#Photo_1
+{
+    display: none;
+}
+
+.liseret
+{
+    width: 30px;
+    height: 900px;
+}
+#liseret_1
+{
+    position: absolute;
+    left: 2px;
+    top: 30px;
+}
+#liseret_2
+{
+    position: absolute;
+    right: 2px;
+    top: 30px;
+}
+#Email
+{
+    width: 35px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    right: 217px;
+}
+
+#Phone
+{
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 76px;
+    right: 180px;
+}
+
+#adresse
+{
+    width: 17px;
+    height: auto;
+    position: absolute;
+    top: 43px;
+    right: 218px;
+}
+
+#contact
+{
+    font-family: 'georgia', sans-serif;
+    font-size: 20px;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.25);
+    color: beige;
+    border-radius: 40px;
+    width: 250px;
+    height: 135px;
+    text-align: center;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+}
+
+#contact:hover
+{
+    box-shadow: 10px 10px 2px 1px rgba(245,245,220,0.25);
+}
+
+#titre, .compétences
+{
+    font-family: 'Ramisland', sans-serif;
+}
+
+.titre_compétences, #en-tête
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.titre_compétences
+{
+    color: black;
+}
+
+.texte, .compétences
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+#udemy
+{
+    color: black;
+}
+
+#udemy:visited /* S'active lorsque le lien est visité */
+{
+    color: black;
+}
+
+#udemy:hover /* S'active lorsque le curseur survole le lien */
+{
+    text-shadow: black 1px 0 10px;
+}
+
+.compétences
+{
+    text-align: left;
+}
+
+#comp
+{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#diplome
+{
+    padding-left: 10px;
+}
+#passions
+{
+    padding-right: 10px;
+}
+
+/* RESPONSIVE */
+
+@media all and (max-width: 1200px) /* S'affiche lorsque le fenêtre fait moins de 1200px de largeur */
+{
+    #comp
+    {
+        display: block;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        align-content: center;
+    }
+
+    .compétences
+    {
+        padding-bottom: 20px;
+    }
+
+    #titre
+    {
+        padding-bottom: 30px;
+    }
+
+    .liseret
+    {
+        display: none;
+    }
+
+    #contact
+    {
+        display: inline-block;
+        width: auto;
+        height: 360px;
+        position: absolute;
+        top: 200px;
+        right: 674,5px;
+    }
+
+    #Photo
+    {
+        display: none;
+    }
+
+    #Photo_1
+    {
+        display: inline-block;
+        width: 150px;
+        height: auto;
+        position: absolute;
+        top: 140px;
+        right: 50px;
+    }
+}
+@media all and (max-width: 815px) /* S'affiche lorsque le fenêtre fait moins de 815px de largeur */
+{
+    #contact
+    {
+        position: absolute;
+        width: 243.688px;
+        height: 360px;
+        top: 700px;
+        left: 20px;
+    }
+}
+@media all and (max-width: 520px) /* S'affiche lorsque le fenêtre fait moins de 520px de largeur */
+{
+    #contact
+    {
+        position: absolute;
+        top: 800px;
+    }
+}
